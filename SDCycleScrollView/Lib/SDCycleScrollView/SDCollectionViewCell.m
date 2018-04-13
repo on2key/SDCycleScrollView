@@ -99,7 +99,12 @@
     if (self.onlyDisplayText) {
         _titleLabel.frame = self.bounds;
     } else {
-        _imageView.frame = self.bounds;
+        //_imageView.frame = self.bounds;
+        CGFloat margin = self.showImageWithMargin ? 15.f:0;
+        CGFloat layer = self.showImageWithMargin ? 5.f:0;
+        _imageView.frame = CGRectMake(margin, margin, (self.frame.size.width - margin * 2), (self.frame.size.height - margin));
+        _imageView.layer.cornerRadius = layer;
+        _imageView.layer.masksToBounds = YES;
         CGFloat titleLabelW = self.sd_width;
         CGFloat titleLabelH = _titleLabelHeight;
         CGFloat titleLabelX = 0;
