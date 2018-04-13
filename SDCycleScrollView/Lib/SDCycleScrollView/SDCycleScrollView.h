@@ -196,6 +196,9 @@ typedef enum {
 /** 轮播文字label对齐方式 */
 @property (nonatomic, assign) NSTextAlignment titleLabelTextAlignment;
 
+/**self-----设置图片带有固定边距,自己添加，默认不带*/
+@property (nonatomic) BOOL showImageWithMargin;
+
 /** 滚动手势禁用（文字轮播较实用） */
 - (void)disableScrollGesture;
 
