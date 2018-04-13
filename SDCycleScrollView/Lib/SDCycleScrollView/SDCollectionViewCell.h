@@ -47,5 +47,7 @@
 
 /** 只展示文字轮播 */
 @property (nonatomic, assign) BOOL onlyDisplayText;
+/**self-----设置图片带有固定边距,自己添加，默认不带*/
+@property (nonatomic) BOOL showImageWithMargin;
 
 @end
