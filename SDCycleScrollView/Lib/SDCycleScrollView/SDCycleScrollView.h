@@ -167,7 +167,8 @@ typedef enum {
 /** 轮播文字label高度 */
 @property (nonatomic, assign) CGFloat titleLabelHeight;
 
-
+/**self-----设置图片带有固定边距,自己添加，默认不带*/
+@property (nonatomic) BOOL showImageWithMargin;
 
 //////////////////////  清除缓存接口  //////////////////////
 
